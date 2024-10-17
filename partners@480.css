@@ -51,9 +51,9 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 0px;
-        height: 100vh;
-        position: absolute;
+        width: 0;
+        height: auto;
+        position: fixed;
         top: 0;
         right: 0;
         overflow: hidden; 
