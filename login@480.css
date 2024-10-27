@@ -1,6 +1,6 @@
 @media screen and (max-width: 480px) {
     *{
-        border: 2px solid red;
+        
     }
     body{
         scroll-behavior: smooth;
