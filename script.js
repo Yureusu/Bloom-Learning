@@ -1,3 +1,4 @@
+
 function openNav() {
     document.getElementById("side-nav").style.width = "250px";
 }
