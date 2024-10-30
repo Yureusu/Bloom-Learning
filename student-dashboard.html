@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="student-dashboard.css">
+    <link  rel="icon" type="image/x-icon" href="bloom-logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cute+Font&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="content">
+        <div class="side-nav">
+            <a href="index.html" id="logo" style="text-decoration: none;">
+                <img src="bloom-logo.png" id="bloom-img">
+            </a>
+            <div id="link-wrapper">
+                <span id="tabs" style="text-decoration: none;" onclick="dashboardTab()">
+                    <img src="dash-dashboard-icon.png" id="dash-icon">Dashboard
+                </span>
+                <span id="tabs" style="text-decoration: none;" onclick="coursesTab()">
+                    <img src="dash-courses-icon.png" id="dash-icon">Courses
+                </span>
+                <span id="tabs" style="text-decoration: none;" onclick="activitiesTab()">
+                    <img src="dash-activities-icon.png" id="dash-icon">Activities
+                </span>
+                <span id="tabs" style="text-decoration: none;" onclick="scheduleTab()">
+                    <img src="dash-schedule-icon.png" id="dash-icon">Schedules
+                </span>
+                <span id="tabs" style="text-decoration: none;" onclick="gradesTab()">
+                    <img src="dash-grades-icon.png" id="dash-icon">Grades
+                </span>
+                <div id="header-space"></div>
+                <span id="tabs" style="text-decoration: none;" onclick="settingsTab()">
+                    <img src="dash-settings-icon.png" id="dash-icon">Settings
+                </span>
+                <span id="tabs" style="text-decoration: none;" onclick="bloomplusTab()">
+                    <img src="bloom-plus.png" id="dash-icon">Bloom-Plus
+                </span>
+            </div>
+        </div>
+        <div class="main-content">
+            <!--main-dashboard-->
+            <div id="main-dashboard">
+                <div id="dashboard-wrapper">
+                    <span id="institution-name">Bloom Learning</span>
+                    <h3>We are thrilled to welcome you to a new academic year at Bloom Learning. As we embark on this journey together, we are excited to introduce you to our new Learning Management System (LMS) – <b>Bloom Learning</b>.</h3>
+                    <h3><b>Bloom Learning</b> will be your go-to platform for all your academic needs. Here, you will find your course materials, assignments, grades, and much more. This system is designed to enhance your learning experience with its user-friendly interface and robust features.</h3>
+                    <h3><b>Key Features Of Bloom Learning</b></h3>
+                    <ul>
+                        <li><b>Centralized Course Materials:</b> Access all your course content in one place.</li>
+                        <li><b>Interactive Tools:</b> Engage with your instructors and peers through discussion boards, chats, and collaborative projects.</li>
+                        <li><b>Assignment Management:</b> Submit your assignments, take quizzes, and track your progress easily.</li>
+                        <li><b>Gradebook:</b> Stay updated with your grades and feedback from your instructors.</li>
+                    </ul>
+                    <h3>To get started, please follow these steps:</h3>
+                    <ol>
+                        <li><b>Login:</b> Use your student ID and password to log in to Bloom Learning.</li>
+                        <li><b>Explore:</b> Familiarize yourself with the dashboard and navigation.</li>
+                        <li><b>Access Courses:</b> Find your enrolled courses and start exploring the materials.</li>
+                        <li><b>Stay Connected:</b> Use the communication tools to stay in touch with your instructors and classmates.</li>
+                    </ol>
+                    <h3>We are confident that Bloom Learning will provide you with a seamless and enriching educational experience. Should you have any questions or need assistance, email <u style="color: blue; cursor: pointer;">bloomlearningsupport@gmail</u> for support.</h3>
+                    <h3>Welcome once again, and we wish you a successful and productive year ahead!</h3>
+                    <h3>Best regards,</h3>
+                    <h3><b>Bloom Learning Management</b></h3>
+                </div>
+            </div>
+            <div id="main-courses">
+                <div id="courses-wrapper">
+                    <span id="institution-name">Courses</span>
+                    <h3>2ND YEAR 1ST TRIMESTER</h3>
+                    <div id="subject-wrapper">
+                        <p id="subject-code">WS1_1_2425_OLCA211N023</p>
+                        <a href="" id="course-name" style="text-decoration: none;">Web Systems And Technologies 1</a>
+                        <div id="more-wrapper">
+                            <a href="" id="more" style="text-decoration: none;">Open</a>
+                            <a href="" id="more" style="text-decoration: none;">Eva Jaravata</a>
+                            <span id="more-info" style="text-decoration: none;" onclick="moreInfo()">More Info
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div id="subject-wrapper">
+                        <p id="subject-code">CC03_1_2425_OLCA211N023</p>
+                        <a href="" id="course-name" style="text-decoration: none;">Intermediate Programming</a>
+                        <div id="more-wrapper">
+                            <a href="" id="more" style="text-decoration: none;">Open</a>
+                            <a href="" id="more" style="text-decoration: none;">Noel Montecillo</a>
+                            <span id="more-info" style="text-decoration: none;" onclick="moreInfo()">More Info
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div id="subject-wrapper">
+                        <p id="subject-code">CPPROG2_1_2425_OLCA211N023</p>
+                        <a href="" id="course-name" style="text-decoration: none;">Object Oriented Programming (Intro. To Java)</a>
+                        <div id="more-wrapper">
+                            <a href="" id="more" style="text-decoration: none;">Open</a>
+                            <a href="" id="more" style="text-decoration: none;">Romarico Robert Doctura</a>
+                            <span id="more-info" style="text-decoration: none;" onclick="moreInfo()">More Info
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div id="subject-wrapper">
+                        <p id="subject-code">OLALTRI_1_2425_OLCA211N023</p>
+                        <a href="" id="course-name" style="text-decoration: none;">Advance Algebra And Trigonometry</a>
+                        <div id="more-wrapper">
+                            <a href="" id="more" style="text-decoration: none;">Open</a>
+                            <a href="" id="more" style="text-decoration: none;">Alfred Anthony Capellan</a>
+                            <span id="more-info" style="text-decoration: none;" onclick="moreInfo()">More Info
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="main-activities">
+                <div id="activity-wrapper">
+                    <span id="activity-title">Activities</span>
+                    <h3 style="color: red;">MISSING</h3>
+                    <div id="missing-wrapper"> 
+                        <p id="missing-sub">WS1_1_2425_OLCA211N023(Web Systems And Technologies 1)</p> 
+                        <a href="" id="missing-act" style="text-decoration: none;">Past Due: Pre-Test 9</a>
+                        <div id="duedate-wrapper">
+                            <p id="due-date">Due Date: 10/20/24, 11:59 PM</p>
+                            <span id="dismiss">Dismiss</span>
+                        </div>
+                    </div>
+                    <div id="missing-wrapper"> 
+                        <p id="missing-sub">WS1_1_2425_OLCA211N023(Web Systems And Technologies 1)</p> 
+                        <a href="" id="missing-act" style="text-decoration: none;">Past Due: Quiz 9</a>
+                        <div id="duedate-wrapper">
+                            <p id="due-date">Due Date: 10/20/24, 11:59 PM</p>
+                            <span id="dismiss">Dismiss</span>
+                        </div>
+                    </div>
+                    <div id="missing-wrapper"> 
+                        <p id="missing-sub">WS1_1_2425_OLCA211N023(Web Systems And Technologies 1)</p> 
+                        <a href="" id="missing-act" style="text-decoration: none;">Past Due: Pre-Test 10</a>
+                        <div id="duedate-wrapper">
+                            <p id="due-date">Due Date: 10/27/24, 11:59 PM</p>
+                            <span id="dismiss">Dismiss</span>
+                        </div>
+                    </div>
+                    <div id="missing-wrapper"> 
+                        <p id="missing-sub">WS1_1_2425_OLCA211N023(Web Systems And Technologies 1)</p> 
+                        <a href="" id="missing-act" style="text-decoration: none;">Past Due: Quiz 10</a>
+                        <div id="duedate-wrapper">
+                            <p id="due-date">Due Date: 10/27/24, 11:59 PM</p>
+                            <span id="dismiss">Dismiss</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="duetoday-wrapper">
+                    <h3 style="color: green;">DUE TODAY</h3>
+                    <div id="missing-wrapper"> 
+                        <p id="missing-sub">WS1_1_2425_OLCA211N023(Web Systems And Technologies 1)</p> 
+                        <a href="" id="missing-act" style="text-decoration: none;">Past Due: Activity 10</a>
+                        <div id="duedate-wrapper">
+                            <p id="due-date">Due Date: 10/31/24, 11:59 PM</p>
+                            <span id="dismiss">Answer</span>
+                        </div>
+                    </div>
+                    <div id="missing-wrapper"> 
+                        <p id="missing-sub">WS1_1_2425_OLCA211N023(Web Systems And Technologies 1)</p> 
+                        <a href="" id="missing-act" style="text-decoration: none;">Past Due: Final Project</a>
+                        <div id="duedate-wrapper">
+                            <p id="due-date">Due Date: 10/31/24, 11:59 PM</p>
+                            <span id="dismiss">Answer</span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div id="main-schedules">
+                <div id="schedules-wrapper">
+                    <span id="schedules-title">Schedules</span>
+                </div>
+            </div>
+            <div id="main-grades">
+                <div id="grades-wrapper">
+                    <span id="grades-title">Grades</span>
+                </div>
+            </div>
+            <div id="main-settings">
+                <div id="settings-wrapper">
+                    <span id="settings-title">Settings</span>
+                </div>
+            </div>
+            <div id="main-bloom-plus">
+                <div id="bloomplus-wrapper">
+                    <span id="bloomplus-title">Bloom-Plus</span>
+                </div>
+            </div>
+            <!--main-profile-->
+            <div id="main-profile">
+                <div id="student-wrapper">
+                    <div id="edit-profile">
+                        <img src="profile-img.png" id="edit-img">
+                        <div id="name-wrapper">
+                            <h1 id="edit-name">Student 1</h1>
+                            <h2 id="edit-name">ID.CA202307143</h2>
+                        </div>
+                        <div id="header-space"></div>
+                        <div id="setting-wrapper">
+                            <span id="edit">Edit Profile</span>
+                            <span id="logout">Log out</span>
+                        </div>
+                    </div>
+                    <div id="student-overview">
+                        <div id="overview-wrapper">
+                            <div id="student-info">
+                                <div id="info-title">Student Information</div>
+                                <div id="infoentry-wrapper">
+                                    <span id="info-entry">Full Name:</span>
+                                    <span id="entry">Student 1</span>
+                                </div>
+                                <div id="infoentry-wrapper">
+                                    <span id="info-entry">Email:</span>
+                                    <span id="entry">student1@gmail.com</span>
+                                </div>
+                                <div id="infoentry-wrapper">
+                                    <span id="info-entry">Student Id:</span>
+                                    <span id="entry">CA202307143</span>
+                                </div>
+                                <div id="infoentry-wrapper">
+                                    <span id="info-entry">Password:</span>
+                                    <span id="entry" style="color: blue;"><u>Change Password</u></span>
+                                </div>
+                                <div id="infoentry-wrapper">
+                                    <span id="info-entry">Phone Number:</span>
+                                    <span id="entry">09XXXXXXXXX</span>
+                                </div>
+                                <div id="infoentry-wrapper">
+                                    <span id="info-entry">Birthday:</span>
+                                    <span id="entry">10/31/9999</span>
+                                </div>
+                                <div id="infoentry-wrapper">
+                                    <span id="info-entry">Gender:</span>
+                                    <span id="entry">Male</span>
+                                </div>
+                                <div id="infoentry-wrapper">
+                                    <span id="info-entry">Website:</span>
+                                    <span id="entry">student1.blog</span>
+                                </div>
+                            </div>
+                            <div id="contact-info">
+                                <div id="info-title">System Settings</div>
+                                <div id="infoentry-wrapper">
+                                    <span id="info-entry">Language:</span>
+                                    <span id="entry">System Default(En)</span>
+                                </div>
+                                <div id="infoentry-wrapper">
+                                    <span id="info-entry">Privacy Settings:</span>
+                                    <span id="entry">Public</span>
+                                </div>
+                                <div id="infoentry-wrapper">
+                                    <span id="info-entry">Email Notification:</span>
+                                    <span id="entry" style="color: blue;"><u>Allowed</u></span>
+                                </div>
+                                <div id="infoentry-wrapper">
+                                    <span id="info-entry">Push Notification:</span>
+                                    <span id="entry" style="color: blue;"><u>Disabled</u></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="user-nav">
+                <div id="profile-wrapper">
+                    <span id="mode-switch" onclick="modeSwitch()">
+                        <i class="fa-solid fa-moon"></i>
+                    </span>
+                    <div id="student-info-wrapper">
+                        <h3 id="student-name">
+                            Student 1
+                        </h3>
+                        <h5 id="student-id">
+                            ID.CA202307143
+                        </h5>
+                    </div>
+                    <span id="img-profile" style="text-decoration: none;" onclick="profileTab()">
+                        <img src="profile-img.png" id="student-img">
+                    </span>
+                </div>
+                <!--calendar-->
+                <div id="student-calendar">
+                    <div id="month">      
+                        <ul>
+                          <li id="prev">&#10094;</li>
+                          <li id="next">&#10095;</li>
+                          <li>
+                            October<br>
+                            <span style="font-size:12px">2024</span>
+                          </li>
+                        </ul>
+                    </div>
+                    <ul id="weekdays">
+                        <li>Mon</li>
+                        <li>Tue</li>
+                        <li>Wed</li>
+                        <li>Thu</li>
+                        <li>Fri</li>
+                        <li>Sat</li>
+                        <li>Sun</li>
+                      </ul>
+                      
+                      <ul id="days">  
+                        <li></li>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li>10</li>
+                        <li>11</li>
+                        <li>12</li>
+                        <li>13</li>
+                        <li>14</li>
+                        <li>15</li>
+                        <li>16</li>
+                        <li>17</li>
+                        <li>18</li>
+                        <li>19</li>
+                        <li>20</li>
+                        <li>21</li>
+                        <li>22</li>
+                        <li>23</li>
+                        <li>24</li>
+                        <li>25</li>
+                        <li>26</li>
+                        <li>27</li>
+                        <li>28</li>
+                        <li>29</li>
+                        <li>30</li>
+                        <li><span class="active">31</span></li>
+                      </ul>
+                </div>
+                <div id="todo-wrapper">
+                    <i class="fa-regular fa-calendar-check"></i>
+                    <h3>To-do</h3>
+                </div>
+                <div id="to-do">
+                    <span id="due-wrapper" href="" style="text-decoration: none;" onclick="dueItem()">
+                        <i class="fa-solid fa-circle" style="color: green;"></i>
+                        <h3>WS1</h3>
+                        <h3>Activity 10</h3>
+                        <h4 style="color: green;">TODAY</h4>
+                    </span>
+                    <span id="due-wrapper" href="" style="text-decoration: none;" onclick="dueItem()">
+                        <i class="fa-solid fa-circle" style="color: green;"></i>
+                        <h3>WS1</h3>
+                        <h3>Final Project</h3>
+                        <h4 style="color: green;">TODAY</h4>
+                    </span>
+                    <span id="due-wrapper" href="" style="text-decoration: none;"  onclick="dueItem()">
+                        <i class="fa-solid fa-circle" style="color: green;"></i>
+                        <h3>WS1</h3>
+                        <h3>Pre-test 9</h3>
+                        <h4 style="color: red;">MISSING</h4>
+                    </span>
+                    <span id="due-wrapper" href="" style="text-decoration: none;"  onclick="dueItem()">
+                        <i class="fa-solid fa-circle" style="color: green;"></i>
+                        <h3>WS1</h3>
+                        <h3>Pre-test 10</h3>
+                        <h4 style="color: red;">MISSING</h4>
+                    </span>
+                    <span id="due-wrapper" href="" style="text-decoration: none;"  onclick="dueItem()">
+                        <i class="fa-solid fa-circle" style="color: green;"></i>
+                        <h3>WS1</h3>
+                        <h3>Quiz 9</h3>
+                        <h4 style="color: red;">MISSING</h4>
+                    </span>
+                    <span id="due-wrapper" href="" style="text-decoration: none;"  onclick="dueItem()">
+                        <i class="fa-solid fa-circle" style="color: green;"></i>
+                        <h3>WS1</h3>
+                        <h3>Quiz 10</h3>
+                        <h4 style="color: red;">MISSING</h4>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="student-dashboard.js"></script>
+</body>
+</html>
