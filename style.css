@@ -1,3 +1,7 @@
+@keyframes fade {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
 body{
     box-sizing: border-box;
     margin: 0;
@@ -14,6 +18,7 @@ body{
     justify-content: flex-start;
     gap: 12px;
     padding-block: 12px;
+    animation: fade 0.3s ease;
 }
 #logo{
     height: 60px;
@@ -82,6 +87,7 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    animation: fade 0.3s ease;
 }
 #landing-img, #main-img, #sub-img{
     display: flex;
@@ -143,6 +149,7 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    animation: fade 0.3s ease;
 }
 #main-text{
     display: flex;
@@ -207,6 +214,7 @@ body{
     justify-content: center;
     padding-block: 24px;
     background-color: #ECDFCC;
+    animation: fade 0.3s ease;
 }
 #trusted-wrapper{
     display: flex;
@@ -259,6 +267,7 @@ body{
     align-items: center;
     justify-content: center;
     background-color: #222831;
+    animation: fade 0.3s ease;
 }
 .copyright-wrapper{
     display: flex;
