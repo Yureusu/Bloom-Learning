@@ -5,3 +5,6 @@ function openNav() {
 function closeNav() {
     document.getElementById("side-nav").style.width = "0px";
 }
+function openLink(){
+    window.open("student-dashboard.html");
+}
